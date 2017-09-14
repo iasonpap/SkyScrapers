@@ -13,4 +13,4 @@ def disemvowel(string):
     return new_str
 
 
-print(disemvowel("Hello World!"))
+print(disemvowel("input("Type your word here: ")"))
