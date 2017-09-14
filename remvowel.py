@@ -1,16 +1,12 @@
-def disemvowel(string):
-    string_ = list(string)
-    print(string_)
-    print("string={0}  list={1}".format(len(string), len(string_)))
+def disemvowel(str2handle):
+    vowel_character = ["a", "A", "e", "E", "o", "O", "i", "I", "u", "U"]
+    str2return = ""
     i = 0
-    while i < len(string):
-        if string_[i] == ('e' or "a" or "i" or "o" or "u" or "y"):
-            string_.remove(string_[i])
-            print("{0}".format(i))
+    n = len(str2handle)
+    while i < n:
+        if not str2handle[i] in vowel_character:
+            str2return += str2handle[i]
         i += 1
-    print(string_)
-    new_str = ''.join(string_)
-    return new_str
-
+    return str2return
 
 print(disemvowel("input("Type your word here: ")"))
