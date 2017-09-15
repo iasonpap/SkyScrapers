@@ -1,4 +1,15 @@
 #!/usr/bin/python
+#function that searches the row and column of an element to find
+#if there are any empty (0) squares 
+def search(matrix,x,y):
+	zerosx=[]
+	zerosy=[]
+	for i in range(4):
+		if matrix[x][i]==0:
+			zerosx.append(i)
+		if matrix[i][y]==0:
+			zeroy.append(i)
+	return zerosx,zerosy
 
 clues = (2,2,1,3,2,2,3,1,1,2,2,3,3,2,1,3)
 matrix = [[0 for x in range(4)] for y in range (4)]
