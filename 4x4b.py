@@ -1,5 +1,7 @@
-#!/usr/bin/python
-import numpy as np
+#it's an update on the previous version of 4x4. I added a neat way to put all the 4 into the matrix
+#Also i made a 6x6 matrix that holds the clues and the values together for convenience
+#And i kept the previous code as comments although the new code renders him obsolete
+
 def search(matrix,x,y):
 	zerosx=[]
 	zerosy=[]
